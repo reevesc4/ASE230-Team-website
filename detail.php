@@ -4,6 +4,7 @@
 $team = [
     [
         'name' => 'Chase Reeves',
+	'dob' => '2001-01-19',
         'role' => 'Member',
 		'career' => 'Cybersecurity Analyst',
         'email' => 'reevesc4@nku.edu',
@@ -20,6 +21,7 @@ $team = [
     ],
     [
         'name' => 'Member 2',
+	'dob' => '2000-07-23',
         'role' => 'Member',
 		'career' => 'member 2 desired career ',
         'email' => 'member2@nku.edu',
@@ -35,16 +37,16 @@ $team = [
         'interests' => ['interest 1', 'interest 2', 'interest 3']
     ],
     [
-		'name' => 'Member 3',
+	'name' => 'Member 3',
+	'dob' => '1999-03-17',
         'role' => 'Member',
-		'career' => 'member 3 desired career',
+	'career' => 'member 3 desired career',
         'email' => 'member3@nku.edu',
         'phone' => 'member 3 phone number',
         'linkedin' => 'member 3 linkedin',
         'summary' => 'member 3 summary',
-		'skills' => ['skill 1', 'skill 2', 'skill 3', 'skill 4', 'skill 5'],
-		'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],
-		'degree' => ['degree1', 'degree2'],
+	'skills' => ['skill 1', 'skill 2', 'skill 3', 'skill 4', 'skill 5'],
+	'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],		'degree' => ['degree1', 'degree2'],
         'college' => ['college1', 'college2'],
         'years' => ['year range1', 'year range2'],
         'language' => 'language',
@@ -94,6 +96,7 @@ $member = $team[$member_id];
 						<div class="row p-4 justify-content-center justify-content-md-between">
 							<div class="primary-info col-auto">
 							<h1 class="name text-white text-uppercase"><?php echo $member['name']; ?></h1>
+							<h2>Age: <?php echo calculateAge($member['dob']); ?></h2>
                                 <div class="title mb-3"><?php echo $member['role']; ?></div>
                                 <ul class="list-unstyled">
                                     <li><i class="far fa-envelope"></i> <?php echo $member['email']; ?></li>
