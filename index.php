@@ -2,8 +2,9 @@
 
 // Team information multidimensional array
 $team = [
-    [
+   [
         'name' => 'Chase Reeves',
+	'dob' => '2001-01-19',
         'role' => 'Member',
 		'career' => 'Cybersecurity Analyst',
         'email' => 'reevesc4@nku.edu',
@@ -20,6 +21,7 @@ $team = [
     ],
     [
         'name' => 'Member 2',
+	'dob' => '2000-07-23',
         'role' => 'Member',
 		'career' => 'member 2 desired career ',
         'email' => 'member2@nku.edu',
@@ -35,18 +37,18 @@ $team = [
         'interests' => ['interest 1', 'interest 2', 'interest 3']
     ],
     [
-		'name' => 'Member 3',
+	'name' => 'Member 3',
+	'dob' => '1999-03-17',
         'role' => 'Member',
-		'career' => 'member 3 desired career',
+	'career' => 'member 3 desired career',
         'email' => 'member3@nku.edu',
         'phone' => 'member 3 phone number',
         'linkedin' => 'member 3 linkedin',
         'summary' => 'member 3 summary',
-		'skills' => ['skill 1', 'skill 2', 'skill 3', 'skill 4', 'skill 5'],
-		'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],
-        'degree' => 'degree',
-        'college' => 'college',
-        'years' => 'year range',
+	'skills' => ['skill 1', 'skill 2', 'skill 3', 'skill 4', 'skill 5'],
+	'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],		'degree' => ['degree1', 'degree2'],
+        'college' => ['college1', 'college2'],
+        'years' => ['year range1', 'year range2'],
         'language' => 'language',
         'interests' => ['interest 1', 'interest 2', 'interest 3']
     ]
