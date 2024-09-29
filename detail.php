@@ -96,8 +96,8 @@ $member = $team[$member_id];
 						<div class="row p-4 justify-content-center justify-content-md-between">
 							<div class="primary-info col-auto">
 							<h1 class="name text-white text-uppercase"><?php echo $member['name']; ?></h1>
-							<h2>Age: <?php echo calculateAge($member['dob']); ?></h2>
                                 <div class="title mb-3"><?php echo $member['role']; ?></div>
+					<h2>Age: <?php echo calculateAge($member['dob']); ?></h2>
                                 <ul class="list-unstyled">
                                     <li><i class="far fa-envelope"></i> <?php echo $member['email']; ?></li>
                                     <li><i class="fas fa-phone"></i> <?php echo $member['phone']; ?></li>
