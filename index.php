@@ -95,6 +95,7 @@ $page = 'detail.php';
                                 <div class="primary-info col-auto">
                                     <h1 class="name text-white text-uppercase"><?php echo $member['name']; ?></h1>
                                     <div class="title mb-3"><?php echo $member['role']; ?></div>
+					<h2>Age: <?php echo calculateAge($member['dob']); ?></h2>
                                     <a href="<?php echo $page . '?id=' . $index; ?>" class="btn btn-secondary">See full profile</a>
                                 </div>
                             </div>
