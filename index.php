@@ -80,7 +80,14 @@ $page = 'detail.php';
 
 
 </head> 
-
+<?php
+function calculateAge($dob){
+  $birthday = new DateTime ($dob);
+  $currentDate = new DateTime();
+  $age = $currentDate ->diff($birthday)->y;
+  return $age;
+}
+?>
 <body>
     <article class="resume-wrapper text-center">
         <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
