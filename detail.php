@@ -18,12 +18,12 @@ $team = [
         'years' => ['2019-2021', '2021 - 2024'],
         'language' => 'English',
         'interests' => ['Video games', 'Travelling', 'Space'],
-	'position' => 'Package Handler',
-	'company' => 'Fedex Ground',
+	'position' => 'IT Intern',
+	'company' => 'ex. Office123',
 	'dateRange' => '2023 - 2024',
-	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.'
+	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.',
 	'achievements' => [
-		'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
+	   	'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
     		'At vero eos et accusamus et iusto odio dignissimos.',
     		'Blanditiis praesentium voluptatum deleniti atque corrupti.',
     		'Maecenas tempus tellus eget.'
@@ -45,12 +45,12 @@ $team = [
         'college' => ['college1', 'college2'],
         'years' => ['year range1', 'year range2'],
         'language' => 'language',
-        'interests' => ['interest 1', 'interest 2', 'interest 3']
+        'interests' => ['interest 1', 'interest 2', 'interest 3'],
 	'position' => 'job position',
 	'company' => 'company name',
 	'dateRange' => 'job year range',
-	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.'
-		'achievements' => [
+	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.',
+	'achievements' => [
 		'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
     		'At vero eos et accusamus et iusto odio dignissimos.',
     		'Blanditiis praesentium voluptatum deleniti atque corrupti.',
@@ -68,16 +68,16 @@ $team = [
         'linkedin' => 'member 3 linkedin',
         'summary' => 'member 3 summary',
 	'skills' => ['skill 1', 'skill 2', 'skill 3', 'skill 4', 'skill 5'],
-	'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],		
+	'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],
 	'degree' => ['degree1', 'degree2'],
         'college' => ['college1', 'college2'],
         'years' => ['year range1', 'year range2'],
         'language' => 'language',
-        'interests' => ['interest 1', 'interest 2', 'interest 3']
+        'interests' => ['interest 1', 'interest 2', 'interest 3'],
 	'position' => 'job position',
 	'company' => 'company name',
 	'dateRange' => 'job year range',
-	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.'
+	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.',
 	'achievements' => [
 		'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
     		'At vero eos et accusamus et iusto odio dignissimos.',
@@ -166,41 +166,47 @@ function calculateAge($dob){
 						<p class="mb-0">
 							<?php
 							echo $member['summary'];
-								?>
+							?>
 						</p>
 					</div>
 				</section><!--//summary-section-->
 				<?php
-				function displayWorkExp($team) {
+				function displayWorkExp($member) {
 					?>
 					<div class="work-experience-item">
-						<h3 class="job-title"><?php echo $team['position']; ?></h3>
-						<p class="company-name><?php echo $team['company']; ?></p>
-						<p class="job-dates><?php echo $team['dateRange']; ?></p>
+						<h3 class="job-title"><?php echo $member['position']; ?></h3>
+						<p class="company-name"><?php echo $member['company']; ?></p>
+						<p class="job-dates"><?php echo $member['dateRange']; ?></p>
 						<div class="role-description">
 							<h4>Role Description</h4>
-							<p>php echo $team['roleDesc']; ?></p>
+							<p><?php echo $member['roleDesc']; ?></p>
 						</div>
 						<div class="achievements">
 							<h4>Achievements</h4>
 							<ul>
 								<?php
-								foreach ($team['achievements']; as $achievement) {
-									 echo "<li>" . htmlspecialchars($achievement) . "</li>";
-								}
+                                   					 foreach ($member['achievements'] as $achievement) {
+                                         					echo "<li>" . ($achievement) . "</li>";
+								    	}
 								?>
 							</ul>
 						</div>
 						<div class="technologies-used">
 							<h4>Technologies Used:</h4>
-							<p><?php echo implode ($team['technologies']); ?></p>
+							<ul>
+                                				<?php
+							        	foreach ($member['technologies'] as $technologies) {
+                                        					echo "<li>" . ($technologies) . "</li>";
+                                    					}
+                                 				?>
+                            				</ul>
 						</div>
 					</div>
-					<?php
+				<?php
 				}
 				?>
 				<?php
-				displayWorkExp($team);
+				displayWorkExp($member);
 				?>
 				<div class="row">
 					<div class="col-lg-9">
