@@ -6,13 +6,13 @@ $team = [
         'name' => 'Chase Reeves',
 	'dob' => '2001-01-19',
         'role' => 'Member',
-		'career' => 'Cybersecurity Analyst',
+	'career' => 'Cybersecurity Analyst',
         'email' => 'reevesc4@nku.edu',
         'phone' => '859-443-5212',
         'linkedin' => 'linkedin.com/in/chase-reeves-b76b4b234',
         'summary' => 'My name is Chase Reeves and I am a student at Northern Kentucky University. My major is in Cybersecurity, and my minors are in Computer Science and Information Technology. I have programming experience in HTML, Java, C++, C#, Python, and some expericnce with CSS, PHP, and Javascript. Some of my hobbies are playing video games and travelling to new places, the last place I went to over the summer was Quebec City, Canada. I also love and am fascinated by anything about space.',
         'skills' => ['Java', 'Networking', 'Risk Analysis', 'HTML/CSS/JS', 'Security Management'],
-		'other' => ['IT Risk Management', 'Internet Security', 'Object-Oriented Programming', 'Computer Literacy', 'Network Security', 'Network Engineering', 'Visual Studio', 'Operating Systems (Windows/Linux)', 'Python'],
+	'other' => ['IT Risk Management', 'Internet Security', 'Object-Oriented Programming', 'Computer Literacy', 'Network Security', 'Network Engineering', 'Visual Studio', 'Operating Systems (Windows/Linux)', 'Python'],
         'degree' => ['A.S. in Computer Science', 'B.S. in Cybersecurity'],
         'college' => ['Bluegrass Community & Technical College', 'Northern Kentucky University'],
         'years' => ['2019-2021', '2021 - 2024'],
@@ -23,13 +23,13 @@ $team = [
         'name' => 'Member 2',
 	'dob' => '2000-07-23',
         'role' => 'Member',
-		'career' => 'member 2 desired career ',
+	'career' => 'member 2 desired career ',
         'email' => 'member2@nku.edu',
         'phone' => 'member 2 phone number',
         'linkedin' => 'member 2 linkedin',
         'summary' => 'member 2 summary',
         'skills' => ['skill 1', 'skill 2', 'skill 3', 'skill 4', 'skill 5'],
-		'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],
+	'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],
         'degree' => ['degree1', 'degree2'],
         'college' => ['college1', 'college2'],
         'years' => ['year range1', 'year range2'],
@@ -91,10 +91,9 @@ function calculateAge($dob){
 ?>
 
 <?php
-	function displayCard($members) {
-      foreach ($members as $index => $member) {
+	function displayCard($member) {
 		  ?>
-		  <div class="member-card" id="member-<?php echo $index; ?>">
+		  <div class="member-card">
 			  <div class="card-header">
 				  <h3><?php echo $member['name']; ?></h3>
 				  <p>Role: <?php echo $member['role']; ?></p>
@@ -103,17 +102,17 @@ function calculateAge($dob){
 				  <p>Skills:</p>
 				  <ul>
 					  <?php 
-					  foreach ($member['skills'] as $skill) {
-						  echo "<li>" . htmlspecialchars($skill) . "</li>";
-					  }
+					  	foreach ($member['skills'] as $skill) {
+							echo "<li>" . ($skill) . "</li>";
+					  	}
 					  ?>
 				  </ul>
 				  <p>Age: <?php echo calculateAge($member['dob']); ?></p>
 			  </div>
 		</div>
-		<?php
+	<?php
 	}
-}
+	?>
 
 <body>
     <article class="resume-wrapper text-center">
@@ -142,10 +141,14 @@ function calculateAge($dob){
         </div>
     </article>
 	<?php
-	diplayCard($team);
+		foreach ($team as $member) {
+	    		displayCard($member);
+		}
 	?>
 	<footer class="footer text-center pt-2 pb-5">
-		<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+		<!-- */
+/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) *//* 
+-->
 		<small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i>
 			<?php
 			echo "by Group 7"
@@ -154,4 +157,3 @@ function calculateAge($dob){
 	</footer>
 </body>
 </html>
-
