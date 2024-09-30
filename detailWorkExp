@@ -1,0 +1,13 @@
+<?php
+function displayWorkExp($workExperience) {
+  ?>
+  <div class="work-exp-item">
+    <h3 class="position"><?php echo htmlspecialchars($member['position']); ?></h3>
+    <h4 class="company"><?php echo htmlspecialchars($member['company']); ?></h4>
+    <p class="date-range"><?php echo htmlspecialchars($member['startEndDate']); ?></p>
+    <p class="role-description"><?php echo htmlspecialchars($member['roleDesc']); ?></p>
+  </div>
+  <?php
+}
+    
+        
