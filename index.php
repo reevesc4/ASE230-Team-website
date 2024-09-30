@@ -80,6 +80,7 @@ $page = 'detail.php';
 
 
 </head> 
+
 <?php
 function calculateAge($dob){
   $birthday = new DateTime ($dob);
@@ -88,6 +89,32 @@ function calculateAge($dob){
   return $age;
 }
 ?>
+
+<?php
+	function displayCard($members) {
+      foreach ($members as $index => $member) {
+		  ?>
+		  <div class="member-card" id="member-<?php echo $index; ?>">
+			  <div class="card-header">
+				  <h3><?php echo $member['name']; ?></h3>
+				  <p>Role: <?php echo $member['role']; ?></p>
+			  </div>
+			  <div class="card-body">
+				  <p>Skills:</p>
+				  <ul>
+					  <?php 
+					  foreach ($member['skills'] as $skill) {
+						  echo "<li>" . htmlspecialchars($skill) . "</li>";
+					  }
+					  ?>
+				  </ul>
+				  <p>Age: <?php echo calculateAge($member['dob']); ?></p>
+			  </div>
+		</div>
+		<?php
+	}
+}
+
 <body>
     <article class="resume-wrapper text-center">
         <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
