@@ -6,35 +6,57 @@ $team = [
         'name' => 'Chase Reeves',
 	'dob' => '2001-01-19',
         'role' => 'Member',
-		'career' => 'Cybersecurity Analyst',
+	'career' => 'Cybersecurity Analyst',
         'email' => 'reevesc4@nku.edu',
         'phone' => '859-443-5212',
         'linkedin' => 'linkedin.com/in/chase-reeves-b76b4b234',
         'summary' => 'My name is Chase Reeves and I am a student at Northern Kentucky University. My major is in Cybersecurity, and my minors are in Computer Science and Information Technology. I have programming experience in HTML, Java, C++, C#, Python, and some expericnce with CSS, PHP, and Javascript. Some of my hobbies are playing video games and travelling to new places, the last place I went to over the summer was Quebec City, Canada. I also love and am fascinated by anything about space.',
         'skills' => ['Java', 'Networking', 'Risk Analysis', 'HTML/CSS/JS', 'Security Management'],
-		'other' => ['IT Risk Management', 'Internet Security', 'Object-Oriented Programming', 'Computer Literacy', 'Network Security', 'Network Engineering', 'Visual Studio', 'Operating Systems (Windows/Linux)', 'Python'],
+	'other' => ['IT Risk Management', 'Internet Security', 'Object-Oriented Programming', 'Computer Literacy', 'Network Security', 'Network Engineering', 'Visual Studio', 'Operating Systems (Windows/Linux)', 'Python'],
         'degree' => ['A.S. in Computer Science', 'B.S. in Cybersecurity'],
         'college' => ['Bluegrass Community & Technical College', 'Northern Kentucky University'],
         'years' => ['2019-2021', '2021 - 2024'],
         'language' => 'English',
-        'interests' => ['Video games', 'Travelling', 'Space']
+        'interests' => ['Video games', 'Travelling', 'Space'],
+	'position' => 'Package Handler',
+	'company' => 'Fedex Ground',
+	'dateRange' => '2023 - 2024',
+	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.'
+	'achievements' => [
+		'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
+    		'At vero eos et accusamus et iusto odio dignissimos.',
+    		'Blanditiis praesentium voluptatum deleniti atque corrupti.',
+    		'Maecenas tempus tellus eget.'
+	],
+	'technologies' => ['Angular', 'Python', 'jQuery', 'Webpack', 'HTML/SASS', 'PostgresSQL']
     ],
     [
         'name' => 'Member 2',
 	'dob' => '2000-07-23',
         'role' => 'Member',
-		'career' => 'member 2 desired career ',
+	'career' => 'member 2 desired career ',
         'email' => 'member2@nku.edu',
         'phone' => 'member 2 phone number',
         'linkedin' => 'member 2 linkedin',
         'summary' => 'member 2 summary',
         'skills' => ['skill 1', 'skill 2', 'skill 3', 'skill 4', 'skill 5'],
-		'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],
+	'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],
         'degree' => ['degree1', 'degree2'],
         'college' => ['college1', 'college2'],
         'years' => ['year range1', 'year range2'],
         'language' => 'language',
         'interests' => ['interest 1', 'interest 2', 'interest 3']
+	'position' => 'job position',
+	'company' => 'company name',
+	'dateRange' => 'job year range',
+	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.'
+		'achievements' => [
+		'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
+    		'At vero eos et accusamus et iusto odio dignissimos.',
+    		'Blanditiis praesentium voluptatum deleniti atque corrupti.',
+    		'Maecenas tempus tellus eget.'
+	],
+	'technologies' => ['Angular', 'Python', 'jQuery', 'Webpack', 'HTML/SASS', 'PostgresSQL']
     ],
     [
 	'name' => 'Member 3',
@@ -46,11 +68,23 @@ $team = [
         'linkedin' => 'member 3 linkedin',
         'summary' => 'member 3 summary',
 	'skills' => ['skill 1', 'skill 2', 'skill 3', 'skill 4', 'skill 5'],
-	'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],		'degree' => ['degree1', 'degree2'],
+	'other' => ['other1', 'other2', 'other3', 'other4', 'other5', 'other6', 'other7', 'other8', 'other9'],		
+	'degree' => ['degree1', 'degree2'],
         'college' => ['college1', 'college2'],
         'years' => ['year range1', 'year range2'],
         'language' => 'language',
         'interests' => ['interest 1', 'interest 2', 'interest 3']
+	'position' => 'job position',
+	'company' => 'company name',
+	'dateRange' => 'job year range',
+	'roleDesc' => 'Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.'
+	'achievements' => [
+		'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.',
+    		'At vero eos et accusamus et iusto odio dignissimos.',
+    		'Blanditiis praesentium voluptatum deleniti atque corrupti.',
+    		'Maecenas tempus tellus eget.'
+	],
+	'technologies' => ['Angular', 'Python', 'jQuery', 'Webpack', 'HTML/SASS', 'PostgresSQL']
     ]
 ];
 $member_id = isset($_GET['id']) ? $_GET['id'] : 0;
@@ -127,6 +161,7 @@ $member = $team[$member_id];
 						</p>
 					</div>
 				</section><!--//summary-section-->
+				
 				<div class="row">
 					<div class="col-lg-9">
 						<section class="resume-section experience-section mb-5">
