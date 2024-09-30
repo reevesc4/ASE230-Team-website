@@ -116,6 +116,15 @@ $member = $team[$member_id];
 
 </head>
 
+<?php
+function calculateAge($dob){
+  $birthday = new DateTime ($dob);
+  $currentDate = new DateTime();
+  $age = $currentDate ->diff($birthday)->y;
+  return $age;
+}
+?>
+
 <body>
 	<article class="resume-wrapper text-center position-relative">
 		<?php /* Only the following line changed from the file in the previous assignment */ ?>
