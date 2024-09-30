@@ -161,7 +161,38 @@ $member = $team[$member_id];
 						</p>
 					</div>
 				</section><!--//summary-section-->
-				
+				<?php
+				function displayWorkExp($team) {
+					?>
+					<div class="work-experience-item">
+						<h3 class="job-title"><?php echo $team['position']; ?></h3>
+						<p class="company-name><?php echo $team['company']; ?></p>
+						<p class="job-dates><?php echo $team['dateRange']; ?></p>
+						<div class="role-description">
+							<h4>Role Description</h4>
+							<p>php echo $team['roleDesc']; ?></p>
+						</div>
+						<div class="achievements">
+							<h4>Achievements</h4>
+							<ul>
+								<?php
+								foreach ($team['achievements']; as $achievement) {
+									 echo "<li>" . htmlspecialchars($achievement) . "</li>";
+								}
+								?>
+							</ul>
+						</div>
+						<div class="technologies-used">
+							<h4>Technologies Used:</h4>
+							<p><?php echo implode ($team['technologies']); ?></p>
+						</div>
+					</div>
+					<?php
+				}
+				?>
+				<?php
+				displayWorkExp($team);
+				?>
 				<div class="row">
 					<div class="col-lg-9">
 						<section class="resume-section experience-section mb-5">
